@@ -1,3 +1,3 @@
 # open-api-project
 
-[My Open API Project](https://github.com/TetianaPavlova/open-api-project)
+[open-api-project](https://github.com/TetianaPav/open-api-project)

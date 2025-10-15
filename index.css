@@ -1,0 +1,52 @@
+/* General page styling */
+
+body {
+  font-family: "Brush Script MT", cursive;
+  margin: 20px;
+  background-color: #dd97cd6e;
+  font-size: 18px;
+}
+
+/* Main title */
+h1 {
+  color: #3d053f;
+  font-size: 48px;
+}
+
+/* Section background and spacing */
+section {
+  background: #9b7c99;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section headings */
+section h2 {
+  font-size: 32px;
+  color: #3d053f;
+  margin-bottom: 1rem;
+}
+
+/* Style for each artwork card */
+.art-card {
+  background-color: #f5e1f2;
+  padding: 1.2rem;
+  margin: 15px 0;
+  border-left: 5px solid #3d053f;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+/* Hover animation for each artwork card */
+.art-card:hover {
+  transform: scale(1.03);
+}
+
+/* Images inside the artwork cards */
+.art-card img {
+  width: 200px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
