@@ -10,7 +10,17 @@ body {
 /* Main title */
 h1 {
   color: #3d053f;
-  font-size: 48px;
+  font-size: 58px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Line between title and navigation */
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #3d053f; /* dark purple line */
+  padding-bottom: 0.5rem; /* spacing below title */
 }
 
 /* Section background and spacing */
@@ -39,14 +49,192 @@ section h2 {
   transition: transform 0.2s ease;
 }
 
+/* --------------------- Artwork/Exhibition Description --------------------- */
+
+.art-card p {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 5px 0 0 0;
+}
+
+.art-card p {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
 /* Hover animation for each artwork card */
 .art-card:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 /* Images inside the artwork cards */
 .art-card img {
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   border-radius: 4px;
   margin-bottom: 10px;
+  display: block;
+}
+
+/* --------------------- Navigation Styling --------------------- */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 1rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3d053f;
+  font-weight: bold;
+  font-size: 30px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  color: #dd97cd;
+  transform: scale(1.05);
+}
+
+/* --------------------- Footer Styling --------------------- */
+footer {
+  background-color: #3d053f;
+  color: #f5e1f2;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  font-size: 20px;
+}
+
+footer a {
+  color: #f5e1f2;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #dd97cd;
+}
+
+/* --------------------- Load More Button Styling --------------------- */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.load-btn {
+  font-family: "Brush Script MT", cursive !important;
+  background-color: #3d053f;
+  color: #f5e1f2;
+  font-size: 22px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.load-btn:hover {
+  background-color: #dd97cd;
+  transform: scale(1.05);
+}
+
+/* --------------------- Responsive Design --------------------- */
+
+/* Mobile: up to 480px */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .art-card img {
+    max-width: 100%;
+    max-width: 200px;
+  }
+
+  nav a {
+    font-size: 25px;
+  }
+
+  footer {
+    font-size: 18px;
+    padding: 0.8rem;
+  }
+}
+
+/* Tablet: 481px to 1024px */
+@media (min-width: 481px) and (max-width: 1024px) {
+  h1 {
+    font-size: 64px;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  .art-card img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+  }
+
+  .art-card:hover {
+    transform: scale(1.08);
+  }
+
+  nav a {
+    font-size: 36px;
+  }
+
+  footer {
+    font-size: 20px;
+    padding: 1.2rem;
+  }
+  /* Section headings more prominent */
+  section h2 {
+    font-size: 40px;
+  }
+}
+
+/* Desktop: 1025px and above */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  section {
+    max-width: 900px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+  }
+
+  .art-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .art-card img {
+    max-width: 200px;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
 }

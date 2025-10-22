@@ -9,9 +9,33 @@
   </head>
   <body>
     <!-- Page header -->
-    <h1>Open API Project</h1>
-    <!-- Section where artwork data will appear -->
+    <header>
+      <h1>Open API Project</h1>
+      <!-- Navigation Links -->
+      <nav>
+        <ul>
+          <li><a href="#" id="show-artworks">Artworks</a></li>
+          <li><a href="#" id="show-exhibitions">Exhibitions</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Section where artwork/exhibition data will appear -->
     <section id="data"></section>
+    <!-- Load More Button -->
+    <div class="button-container">
+      <button id="load-more" class="load-btn">Load More Artworks</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Tetiana Pavlova. Open API Project.</p>
+      <p>
+        API data from the
+        <a href="https://api.artic.edu" target="_blank"
+          >Art Institute of Chicago</a
+        >.
+      </p>
+    </footer>
     <!-- JavaScript file that runs the API fetch -->
     <script src="index.js"></script>
   </body>
